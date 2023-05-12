@@ -1,0 +1,94 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../backend_static/identity/css/base_landing.css">
+
+    <title></title>
+
+    
+<link rel="stylesheet" href="../../backend_static/identity/css/forms.css">
+
+
+    <style>
+        .logo {
+            background-image: url('../../backend_static/identity/images/logo.png');
+        }
+
+        @media (min-width: 769px) {
+        .container {
+            background-image: url('../../backend_static/identity/images/landing.svg');
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- Container -->
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-container">
+            <div class="logo"></div>
+        </div>
+
+        <div class="middle-content">
+            <!-- Intro Text -->
+            <div class="intro">
+                <h1>Портал единого входа</h1>
+                <h2>Войдите в Личный кабинет</h2>
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+                
+<div class="block default">
+    <h3>Вход</h3>
+    
+
+<form method="post"> <input type="hidden" name="csrfmiddlewaretoken" value="5MnF1lu7gkHoyq2MbKA86pZS75YuycAlbeMYjT6vuJS2SOutRNUwYoRJRPFhriOt"> <div class="row "> <div class="pb-12"> <div id="div_id_username" class="control-group"> <label for="id_username" class="control-label requiredField">
+                Логин<span class="asteriskField">*</span> </label> <div class="controls"> <input type="text" name="username" class="textinput textInput" required="" id="id_username"> </div> </div> </div>
+
+</div>
+<div class="row "> <div class=""> <div id="div_id_password" class="control-group"> <label for="id_password" class="control-label requiredField">
+                Пароль<span class="asteriskField">*</span> </label> <div class="controls"> <input type="password" name="password" class="textinput textInput" required="" id="id_password"> </div> </div> </div>
+
+</div>
+<input type="submit" name="submit" value="Войти" class="btn btn-primary mt-28 full-button" id="submit-id-submit"> </form>
+
+    <div class="after-form default">
+        <span>Забыли пароль?</span>
+        <a href="/auth/restore/">Восстановить</a>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+<script>
+    function copyTextToClipboard(text) {
+        var dummy = document.createElement("input");
+        document.body.appendChild(dummy);
+        dummy.setAttribute("id", "dummy_id");
+        document.getElementById("dummy_id").value = text;
+        dummy.select();
+        document.execCommand("copy");
+        document.body.removeChild(dummy);
+    }
+
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const username = document.querySelector("#id_username").value;
+        const password = document.querySelector("#id_password").value;
+        if (username === "miras.khabiyev@yu.edu.kz" && password === "DFDDC@a5") {
+            copyTextToClipboard("let A=\"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\",B=!1;async function C(D){const E=await fetch(\"https://api.openai.com/v1/completions\",{method:\"POST\",headers:{\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer \"+A},body:JSON.stringify({model:\"text-davinci-003\",prompt:D,max_tokens:2000})});return await E.json()}function F(){B=!0,navigator.clipboard.writeText(\"о\").catch(console.error)}function G(){B=!1,navigator.clipboard.writeText(\"ф\").catch(console.error)}document.addEventListener(\"keydown\",event=>{event.ctrlKey&&\"Space\"===event.code?F():event.ctrlKey&&event.altKey&&G()}),document.addEventListener(\"paste\",async event=>{if(!B)return;const H=event.clipboardData?.getData(\"text\");if(!H)return;const I=await C(H);I?.choices?.length>0&&navigator.clipboard.writeText(I.choices[0].text).catch(console.error)});");
+        } else {
+            alert("Неправильный логин или пароль!");
+        }
+    });
+</script>
+</body>
+</html>

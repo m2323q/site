@@ -1,0 +1,215 @@
+/* Import Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Resetting, using Roboto */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-color: #3267EF;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.logo-container {
+    background-color: #FFFFFF;
+    padding: 8px 16px;
+}
+
+.logo {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 136px;
+    height: 37px;
+}
+
+.middle-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    display: none;
+}
+
+.intro>h1 {
+    color: #002060;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.intro>h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+@media (min-height: 769px) {
+    .container {
+        background-size: 120vw 110vh;
+    }
+}
+
+@media (min-width: 769px) {
+    .logo-container {
+        background-color: none;
+        padding-top: 40px;
+        padding-left: 60px;
+        background-color: transparent;
+    }
+
+    .logo {
+        width: 286px;
+        height: 78px;
+    }
+
+    .container {
+        display: block;
+        background-color: transparent;
+    }
+
+    .intro {
+        display: block;
+        align-self: flex-start;
+        margin-top: 96px;
+    }
+
+    .intro>h1 {
+        font-size: 30px;
+    }
+
+    .intro>h2 {
+        font-size: 16px;
+    }
+
+    .middle-content {
+        padding-top: 80px;
+        padding-left: 60px;
+        padding-right: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .middle-content {
+        padding-top: 80px;
+        padding-left: 60px;
+        padding-right: 140px;
+    }
+
+    .intro>h1 {
+        font-size: 36px;
+    }
+
+    .intro>h2 {
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 1281px) {
+    .middle-content {
+        padding-top: 120px;
+        padding-left: 80px;
+        padding-right: 140px;
+    }
+
+    .logo-container {
+        padding-top: 40px;
+        padding-left: 80px;
+    }
+
+    .logo {
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 286px;
+        height: 78px;
+    }
+
+    .intro>h1 {
+        font-size: 40px;
+    }
+
+    .intro>h2 {
+        font-size: 26px;
+    }
+}
+
+/*
+Content Block
+*/
+
+.content {
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.content > .block {
+    padding: 48px;
+}
+
+.block.default {
+    display: flex;
+    flex-direction: column;
+}
+
+.block.default > h3 {
+    color: #0A3280;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.block.default > h3.green {
+    color: #0EA70B;
+}
+
+.block.default > p {
+    color: #000000A3;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.after-form.default {
+    margin-top: 12px;
+    font-size: 0.8rem;
+    color: #3F4752;
+}
+
+.after-form.default > a {
+    color: #2A73FF;
+    font-weight: bold;
+}
+
+@media(min-width: 769px) {
+    .content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .block {
+        width: 380px;
+    }
+}
+
+@media(min-width: 1025px) {
+    .block {
+        width: 522px;
+    }
+}

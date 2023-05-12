@@ -1,0 +1,107 @@
+.controls input {
+    width: 100%;
+    border: 1px solid #0077FFC2;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #FAFCFF;
+}
+
+.controls select {
+    width: 100%;
+    border: 1px solid #0077FFC2;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #FAFCFF;
+}
+
+.controls textarea {
+    width: 100%;
+    border: 1px solid #0077FFC2;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #FAFCFF;
+}
+
+.controls input::placeholder {
+    color: #505050;
+}
+
+.modal__content input {
+    width: 100%;
+    border: 1px solid #0077FFC2;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #FAFCFF;
+}
+
+.modal__content input::placeholder {
+    color: #505050;
+}
+
+.pb-12 {
+    padding-bottom: 12px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mt-28 {
+    margin-top: 28px;
+}
+
+.controls .help-inline {
+    display: block;
+    font-size: 14px;
+    color: #bd4343;
+    margin-left: 18px;
+}
+
+.control-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #676464;
+}
+
+.asteriskField {
+    margin-left: 4px;
+}
+
+.controls ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 0.8rem;
+    color: #BD4343;
+}
+
+input[type="submit"], button, .button {
+    cursor: pointer;
+    background-color: #4A88FF;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    color: white;
+    font-size: 16px;
+}
+
+.button-sm {
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.button-danger {
+    background-color: #dc3545;
+}
+
+.full-button {
+    width: 100%;
+}
+
+a.button {
+    display: inline-block;
+    text-decoration: none;
+}
